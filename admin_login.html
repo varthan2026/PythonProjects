@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BPS Election Management System</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,Arial,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-box{
+    width:420px;
+    background:white;
+    border-radius:15px;
+    padding:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+h1{
+    text-align:center;
+    color:#1e3a8a;
+}
+
+h3{
+    text-align:center;
+    color:gray;
+    margin-bottom:25px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0 20px;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+.footer{
+    margin-top:20px;
+    text-align:center;
+    color:gray;
+}
+</style>
+
+</head>
+<body>
+
+<div class="login-box">
+
+<h1>BPS Election</h1>
+<h3>Admin Login</h3>
+
+<form action="/login" method="POST">
+
+Username
+<input type="text" name="username" required>
+
+Password
+<input type="password" name="password" required>
+
+<button type="submit">Login</button>
+
+</form>
+
+<div class="footer">
+Election Management System v1.0
+</div>
+
+</div>
+
+</body>
+</html>
